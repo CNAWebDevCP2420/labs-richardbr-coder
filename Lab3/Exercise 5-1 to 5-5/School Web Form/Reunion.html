@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="ReunionUpload.php" enctype="multipart/form-data" >
+        <input type="hidden" name="size" value="1000000">
+        <div>
+            <textarea name="person_name" placeholder="Specify your name"></textarea>
+        </div>
+        <div>
+            <textarea name="image_description" placeholder="describe about the image"></textarea>
+        </div>
+        <div>
+            <input type="file" name="image">
+        </div>
+        <div>
+            <button type="submit" name="upload">POST</button>
+        </div>
+    </form>
+    
+</body>
+</html>

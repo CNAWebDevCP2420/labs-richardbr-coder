@@ -1,0 +1,9 @@
+//create database
+
+create database SoftwareReport;
+
+//open / use the database
+
+//create the table table1
+
+create table table1 (pname varchar(20),version varchar(10),hardware varchar(10),os varchar(20),freq int(3),solutions varchar(50));
