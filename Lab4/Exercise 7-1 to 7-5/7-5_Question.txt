@@ -1,0 +1,53 @@
+The question is:
+
+Database design techniques include the ability to identify and design five normalization levels: 
+- first normal form through fifth normal form. 
+Search the Internet or visit your local library for information 
+on these techniques and describe how to identify and design each nor- malization level.
+
+ANSWER
+
+FIRST
+For a table to be in the First Normal Form, it should follow the following 4 rules:
+
+It should only have single(atomic) valued attributes/columns.
+Values stored in a column should be of the same domain
+All the columns in a table should have unique names.
+And the order in which data is stored, does not matter.
+
+SECOND
+For a table to be in the Second Normal Form,
+
+It should be in the First Normal form.
+And, it should not have Partial Dependency.
+
+THIRD
+A table is said to be in the Third Normal Form when,
+
+It is in the Second Normal form.
+And, it doesn't have Transitive Dependency.
+
+BOYCE AND CODD NORMAL FORM
+Boyce and Codd Normal Form is a higher version of the Third Normal form. 
+This form deals with certain type of anomaly that is not handled by 3NF. 
+A 3NF table which does not have multiple overlapping candidate keys is said to be in BCNF. 
+For a table to be in BCNF, following conditions must be satisfied:
+
+R must be in 3rd Normal Form
+and, for each functional dependency ( X → Y ), X should be a super Key.
+
+FOURTH
+Fourth Normal Form (4NF)
+
+A table is said to be in the Fourth Normal Form when,
+
+It is in the Boyce-Codd Normal Form.
+And, it doesn't have Multi-Valued Dependency.
+
+FIFTH
+Fifth normal form (5NF), also known as project-join normal form (PJ/NF), 
+is a level of database normalization designed to reduce redundancy in relational databases recording multi-valued
+ facts by isolating semantically related multiple relationships. 
+ A table is said to be in the 5NF if and only if every non-trivial join dependency in that table is implied by the candidate keys.
+
+A join dependency *{A, B, … Z} on R is implied by the candidate key(s) of R if and only if each of A, B, …, Z is a superkey for R
